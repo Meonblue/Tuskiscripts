@@ -12,7 +12,7 @@ def get_users():
     users= []
     os.environ.get("jlqduser")
     if '&' in os.environ["jlqduser"]:
-    users = os.environ["jlqduser"].split('&')
+        users = os.environ["jlqduser"].split('&')
     return users
     
 def _tran_canny(image):
